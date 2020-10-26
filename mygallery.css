@@ -1,0 +1,193 @@
+.main {
+    display:flex;
+    height: 100vh;
+}
+.left-menu {
+    width: 150px;
+    background: orange;
+    padding: 5px;
+}
+.filter {
+    width: 150px;
+
+}
+.content{
+	display: flex;
+    flex-wrap: wrap;
+	flex: 1;
+}
+
+.goods{
+	border: 1px #ccc solid;
+	border-radius: 10px;
+	width: 200px;
+	height: 200px;
+	display: flex;
+    flex-direction: column;
+	margin: 3px;
+	cursor: pointer;
+    
+}
+
+.goods .image{
+	align-items: center;
+	flex: 1;
+}
+
+.goods .image img{
+	max-width: 158px;
+	max-height: 158px;
+}
+.goods div{
+	display: flex;
+    justify-content: center;
+}
+
+.icon{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.icon.close{
+	background-image: url(img/icon/icon-close.png);
+}
+
+.icon.add{
+	background-image: url(img/icon/add-24px.svg);
+}
+
+.icon.delete{
+	background-image: url(img/icon/delete-24px.svg);
+}
+
+.icon.left{
+	background-image: url(img/icon/left.svg);
+}
+.icon.left:hover{
+	background-image: url(img/icon/left_hover.svg);
+}
+.icon.right{
+	background-image: url(img/icon/right.svg);
+}
+.icon.right:hover{
+	background-image: url(img/icon/right_hover.svg);
+}
+
+.login-popup{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-popup .cover{
+	background: #000;
+	opacity: 0.5;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.login-popup .login-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border: 2px green solid;
+    z-index: 20;
+    flex-direction: column;	
+}
+
+.login-popup .login-content img{
+	max-width: 400px;
+    max-height: calc(400px - 20px);
+}
+
+.login-popup .close-block{
+	display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.login-popup .empty{
+	height: 20px;
+}
+
+.carousel {
+	height: 500px;
+	width: calc(500px * 2);
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.carousel img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.carousel .image{
+	height: 500px;
+	width: 500px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel .image.small{
+	height: calc(500px / 2);
+	width: calc(500px / 2);	
+	opacity: 0.5;
+}
+
+.carousel .image.fake{
+	width: 0;
+}
+
+
+.carousel .buttons{
+	cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;    
+    width: 500px;
+    height: 500px;
+	z-index: 5;
+}
+
+.carousel .step-back,
+.carousel .step-forward{
+	width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carousel .step-forward{
+	justify-content: flex-end;
+}
+
+.carousel .step-forward:hover,
+.carousel .step-back:hover{
+	font-size: 30px;
+	color: red;
+}
+
+.carousel .step-back:hover .icon.left{
+	background-image: url(img/icon/left_hover.svg);
+}
+.carousel .step-forward:hover .icon.right{
+	background-image: url(img/icon/right_hover.svg);
+}
+

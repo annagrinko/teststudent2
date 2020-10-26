@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="mygallery.css">
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/mygallery.js"></script>
+    </head>
+    <body>
+        <div class = 'main'>
+            <div class = 'left-menu'>
+                <div>
+                    Галлерея
+                    <a href="https://eda.ru/recepty" target='_blank'>  icon </a>
+                </div>
+                <div>
+                    <input class='filter' placeholder='фильтрация' />
+                </div>
+                <div>
+                    <label>
+                        Name <input type='radio' name='sortField' checked='checked' value='name' />
+                    </label>
+                    
+                    <label>
+                        Url <input type='radio' name='sortField' value='url' />
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Вверх <input type='radio' name='sortOrder'  value='Up' />
+                    </label>
+                    
+                    <label>
+                        Вниз <input type='radio' name='sortOrder' value='Down' />
+                    </label>
+                </div>
+                <div>
+					<div>
+						<label>
+							С учётом P <input type='radio' name='registerSort' value='1' />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							Без учёта P <input type='radio' name='registerSort' value='2' />
+						</label>
+					</div>
+				</div>
+				<div>
+					<input type='button' value='обновить' class='refresh'/>
+				</div>
+            </div>
+            <div>
+                <div class = 'content'>
+                    <div class='goods first'>
+                        <div class='name'>
+                            <input class='new-image-name' placeholder='Название' />
+                            <span class='icon delete' style='visibility:hidden;'></span>
+                        </div>
+                        <div>
+                            <input class='new-image-url' placeholder='URL картинки' value='img/image1.jpg' />
+                            <span class='icon add'></span>
+                        </div>
+                        <div class='image'>
+                            <img src='img/image8.jpg' />
+                        </div>
+                    </div>
+                
+                </div>
+                <div class='carousel'>
+                    <div class='buttons'>
+                        <span class='step-back'><span class='icon left'></span></span>
+                        <span class='step-forward'><span class='icon right'></span></span>
+                    </div>
+                    <div class='image small fake left'>
+                        <img class='left-image' src='img/image1.jpg' />
+                    </div>
+                    <div class='image small back'>
+                        <img class='left-image' src='img/image2.jpg' />
+                    </div>
+                    <div class='image center'>
+                        <img class='center-image' src='img/image1.jpg' />
+                    </div>
+                    <div class='image small forward'>
+                        <img class='right-image' src='img/image1.jpg' />
+                    </div>
+                    <div class='image small fake right'>
+                        <img class='right-image' src='img/image1.jpg' />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='login-popup'>
+			<div class='cover'></div>
+			<div class='login-content'>
+				<div class='close-block'>
+					<span class='icon close'></span>
+				</div>
+				<div class='login-content-center'>
+					<div>
+						<input type='text' placeholder='Login' />
+					</div>
+					<div>
+						<input type='password' placeholder='Password' />
+					</div>
+					<div>
+						<input type='button' value='login' />
+						<input type='button' value='registration' />
+					</div>
+				</div>
+				<div class='empty'></div>
+			</div>
+		</div>
+    </body>
+</html>
